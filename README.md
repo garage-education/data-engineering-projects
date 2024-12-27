@@ -176,18 +176,6 @@ Below is an **enhanced** version of the **General Guidance** section. The origin
 
 ---
 
-> [!SUMMARY]  
-> **By following these general practices, junior developers can**:
->
-> - **Improve reliability**: Automated tests (unit + integration) catch issues early.
-> - **Enhance maintainability**: Standardized linting/formatting keeps code readable.
-> - **Ensure consistency**: Git pre-commit hooks and dev containers align local and CI environments.
-> - **Optimize development flow**: Quick feedback loops (via mocking and CI/CD) let you iterate rapidly without unexpected production issues.
-
-Incorporate these steps into each data engineering project—whether building ETL pipelines, analytics workflows, or machine learning models—to maintain **high-quality, scalable, and resilient** solutions.
-
----
-
 ## Projects
 
 > [!NOTE]  
