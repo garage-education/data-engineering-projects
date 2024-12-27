@@ -88,8 +88,8 @@ Below is an **enhanced** version of the **General Guidance** section. The origin
 > [!TIP]  
 > **Best Practices**:
 >
-> - Use a **linter** (e.g., **Flake8**, **Pylint**) to detect issues (undefined variables, unused imports).
-> - Use a **formatter** (e.g., **Black**, **Autopep8**) to standardize indentation, spacing, and line lengths.
+> - Use a **linter** (e.g., **ruff**, **Flake8**, **Pylint**) to detect issues (undefined variables, unused imports).
+> - Use a **formatter** (e.g.,**ruff**, **Black**, **Autopep8**) to standardize indentation, spacing, and line lengths.
 > - **Always** run linting/formatting—either locally before committing or via pre-commit hooks—to ensure code consistency across the team.
 
 ---
@@ -158,7 +158,7 @@ Below is an **enhanced** version of the **General Guidance** section. The origin
 > [!TIP]  
 > **Best Practices**:
 >
-> - Document your lint and format processes (e.g., “Run `black . && flake8 .` before committing”).
+> - Document your lint and format processes (e.g., “Run `black . && flake8 .` or `ruff format` before committing”).
 > - Integrate them into your dev container configuration, pre-commit hooks, and CI.
 > - Use a standard config file (like `pyproject.toml` for Black) so the entire team (and CI) uses the same style rules.
 
