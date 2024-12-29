@@ -509,6 +509,7 @@ Below is an **enhanced** version of the **General Guidance** section. The origin
 5. **Simple Dashboard**
    - **Charts**: Churn rate by segment, predicted vs. actual churn.
    - **Use Case**: Marketing or retention teams filter high-risk customers for proactive promotions.
+---
 ### 11) Real-Time Streaming Data Pipeline with Kafka and Spark  
 
 ### Business Goal  
@@ -533,7 +534,7 @@ JSON payload containing:
 **Data Details**:  
 Generated in real-time with randomness to mimic diverse inputs and simulate production traffic.  
 
----
+
 
 ### Expectations  
 
@@ -563,7 +564,6 @@ Generated in real-time with randomness to mimic diverse inputs and simulate prod
   - Patterns of invalid or malformed data.  
 - Use lightweight tools like Plotly or Grafana.  
 
----
 
 ### Use Case  
 Real-time monitoring of customer activity or operational metrics with rapid responses to anomalies. For instance, tracking a sudden influx of users from a specific location or identifying a rise in incomplete data records.  
