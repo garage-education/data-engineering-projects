@@ -22,6 +22,7 @@ Below is an **enhanced** version of your README. All original content is retaine
    - [8) End-to-End Data Lake (Generic Implementation)](#8-end-to-end-data-lake-generic-implementation)
    - [9) Spark-Based Historical Tracking (Dimension Changes over Time)](#9-spark-based-historical-tracking-dimension-changes-over-time)
    - [10) Basic Machine Learning Pipeline Integration](#10-basic-machine-learning-pipeline-integration)
+   - [11) Real-Time Streaming Data Pipeline with Kafka and Spark](#11-Real-Time-Streaming-Data-Pipeline-with-Kafka-and-Spark)
 
 ---
 
@@ -508,7 +509,7 @@ Below is an **enhanced** version of the **General Guidance** section. The origin
 5. **Simple Dashboard**
    - **Charts**: Churn rate by segment, predicted vs. actual churn.
    - **Use Case**: Marketing or retention teams filter high-risk customers for proactive promotions.
-11) Real-Time Streaming Data Pipeline with Kafka and Spark  
+### 11) Real-Time Streaming Data Pipeline with Kafka and Spark  
 
 ### Business Goal  
 
