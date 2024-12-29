@@ -508,6 +508,65 @@ Below is an **enhanced** version of the **General Guidance** section. The origin
 5. **Simple Dashboard**
    - **Charts**: Churn rate by segment, predicted vs. actual churn.
    - **Use Case**: Marketing or retention teams filter high-risk customers for proactive promotions.
+11) Real-Time Streaming Data Pipeline with Kafka and Spark  
+
+### Business Goal  
+
+**Objective**: Build a scalable real-time streaming pipeline to ingest, process, and store data, enabling near-instant insights.  
+**Key Insight**: Businesses can leverage real-time analytics to make data-driven decisions, enhance customer experiences, and respond to events proactively.  
+
+---
+
+### Data & Dataset Description  
+
+**Data Source**:  
+[Random User API](https://randomuser.me/) for generating real-time sample data.  
+
+**Data Format**:  
+JSON payload containing:
+- `id`: Unique identifier for the record.  
+- `name`: Randomly generated name.  
+- `email`: Randomly generated email address.  
+- `location`: A location associated with the user.  
+
+**Data Details**:  
+Generated in real-time with randomness to mimic diverse inputs and simulate production traffic.  
+
+---
+
+### Expectations  
+
+#### **Ingest**
+- Fetch data from the [Random User API](https://randomuser.me/) at regular intervals.  
+- Publish the fetched data to a Kafka topic named `random_names`.  
+
+#### **Stream and Process**
+- Use Spark Structured Streaming to consume data from the `random_names` topic.  
+- Perform transformations:  
+  - Parse JSON records.  
+  - Filter incomplete or malformed data.  
+
+#### **Store**
+- Persist processed data into Apache Cassandra for structured storage and efficient querying.  
+- Use an appropriate schema with indexed columns like `name` and `location`.  
+
+#### **Orchestrate**
+- Automate the pipeline using Apache Airflow:  
+  - Schedule data ingestion.  
+  - Trigger Spark jobs for processing.  
+
+#### **Simple Dashboard**
+- Visualize insights from Cassandra:
+  - Message volume by time intervals.  
+  - Distribution of locations.  
+  - Patterns of invalid or malformed data.  
+- Use lightweight tools like Plotly or Grafana.  
+
+---
+
+### Use Case  
+Real-time monitoring of customer activity or operational metrics with rapid responses to anomalies. For instance, tracking a sudden influx of users from a specific location or identifying a rise in incomplete data records.  
+
 
 ---
 
