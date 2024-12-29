@@ -517,7 +517,6 @@ Below is an **enhanced** version of the **General Guidance** section. The origin
 **Objective**: Build a scalable real-time streaming pipeline to ingest, process, and store data, enabling near-instant insights.  
 **Key Insight**: Businesses can leverage real-time analytics to make data-driven decisions, enhance customer experiences, and respond to events proactively.  
 
----
 
 ### Data & Dataset Description  
 
